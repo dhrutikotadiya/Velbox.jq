@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the petshop || Fun Store for Pet</title>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!-- font awesome link -->
+
+    <link rel="stylesheet" href="assets/css/all.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="loader">
+        <div></div>
+    </div>
+
+    <div class="main-loader">
+        <!-- header -->
+
+        <section>
+            <header>
+                <div class="container">
+                    <div class="row justify-coctent-between align-items-center">
+                        <div>
+                            <img src="assets/image/logo.png" alt="webp" title="webp_img" width="180" />
+                        </div>
+                        <nav>
+                            <ul class="row">
+                                <li>
+                                    <a href="#">HOME</a>
+                                    <ul class="sub-manu">
+                                        <li>Home - 1</li>
+                                        <li>Home - 1</li>
+                                        <li>Home - 1</li>
+                                        <li>Home - 1</li>
+                                        <li>Home - 1</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">FOOD</a>
+                                </li>
+                                <li>
+                                    <a href="#">PAGES</a>
+                                </li>
+                                <li>
+                                    <a href="#">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search-icon">
+                            <ul class="row">
+                                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li><i class="fa-solid fa-user"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <!-- slider -->
+
+        <section class="slider-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="w50">
+                        <div class="w100 slider-contant">
+                            <h3>Clinic with Innovative</h3>
+                            <h1>Approach to <br>Treatment</h1>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="w50">
+                        <div class="w100">
+                            <img src="assets/image/image-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="w33">
+                        <div class="w100">
+                            <img src="assets/image/doctor-1.jpg" alt="img_1" title="img-1" width="335"/>
+                        </div>
+                    </div>
+                    <div class="w33">
+                        <div class="w100">
+                            <img src="assets/image/doctor-2.jpg" alt="img_1" title="img-1" width="335"/>
+                        </div>
+                    </div>
+                    <div class="w33">
+                        <div class="w100">
+                            <img src="assets/image/3.jpg" alt="img_1" title="img-1" width="335" height="383"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+     
+
+        <div class="theme-button">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="theme">
+            <div class="theme-btn moon"></div>
+            <div class="theme-btn sun"></div>
+        </div>
+
+
+        <button>
+            <a href="#" class="fa fa-angle-double-up"></a>
+        </button>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 40) {
+                $('button').fadeIn(1000);
+            }
+            else {
+                $('button').fadeOut(1000);
+            }
+        });
+        $("button").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        });
+
+        $(".theme-button").click(function(){
+            $(".theme").slideToggle(1000);
+        });
+
+        $(".moon").click(switchnight);
+        $(".sun").click(switchmorning);
+
+        function switchnight(){
+            $("body").attr('class','night');
+        };
+
+        function switchmorning(){
+            $("body").attr('class','morning');
+        };
+    </script>
+
+</body>
+
+</html>
